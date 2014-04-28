@@ -79,31 +79,19 @@ while ($row =mysqli_fetch_array($result)){
                         <tr>
                             <td class="col-md-9"><em></em></h4></td>
                             <td classs="col-md-1" style="text-align: center"> 1 </td>
-                            <td class="col-md-1 text-center">$8</td>
-                            <td class="col-md-1 text-center">$8</td>
+                            <td class="col-md-1 text-center"></td>
+                            <td class="col-md-1 text-center"></td>
                         </tr>
                         <tr>
                             <td class="col-md-9"><em></em></h4></td>
                             <td class="col-md-1" style="text-align: center"> 3 </td>
-                            <td class="col-md-1 text-center">$16</td>
-                            <td class="col-md-1 text-center">$48</td>
+                            <td class="col-md-1 text-center"></td>
+                            <td class="col-md-1 text-center"></td>
                         </tr>
                         <tr>
                             
-                            <td class="text-right">
-                            <p>
-                                <strong>Subtotal: </strong>
-                            </p>
-                            <p>
-                                <strong>Tax: </strong>
-                            </p></td>
-                            <td class="text-center">
-                            <p>
-                                <strong>$6.94</strong>
-                            </p>
-                            <p>
-                                <strong>$6.94</strong>
-                            </p></td>
+                         
+                            
                         </tr>
                         <tr>
                             
