@@ -1,7 +1,10 @@
+<?php 
+/*include "dbconnection.php";
+$result = mysqli_query($con,"SELECT DISTINCT type_id FROM bilik");
+while ($row =mysqli_fetch_array($result)){
+*/?>        
 
-
- 
-        <title>Confirmation</title>
+<title>Confirmation</title>
          <center style="background-color:#000000;">
 
          	<link href="/hiba/bootstrap/css/bootstrap.css" rel="stylesheet">
@@ -45,60 +48,54 @@
             <div class="row">
                 <div class="col-xs-6 col-sm-6 col-md-6">
                     <address>
-                        <strong>Putra Hotel</strong>
+                        <strong>Putra Hotel</strong><br>
                         
-                        <abbr title="Phone">P:</abbr> (213) 484-6829
+                        Phone Number: 012-3456789
                     </address>
                 </div>
-                <div class="col-xs-6 col-sm-6 col-md-6 text-right">
-                    <p>
-                        <em>Date: 1st November, 2013</em>
-                    </p>
-                 
-                </div>
+             
             </div>
             <div class="row">
                 <div class="text-center">
                     <h1>Receipt</h1>
                 </div>
                 </span>
-                <table class="table table-hover">
+                <table class="table table-hover" method="post" action="checking_pay.php">
                     <thead>
                         <tr>
-                            <th>Product</th>
-                            <th>#</th>
-                            <th class="text-center">Price</th>
-                            <th class="text-center">Total</th>
+                            <th>Types Of Room</th>
+                            <th>Guest</th>
+                            <th class="text-center">In</th>
+                            <th class="text-center">Out</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td class="col-md-9"><em>Baked Rodopa Sheep Feta</em></h4></td>
-                            <td class="col-md-1" style="text-align: center"> 2 </td>
-                            <td class="col-md-1 text-center">$13</td>
-                            <td class="col-md-1 text-center">$26</td>
-                        </tr>
-                        <tr>
-                            <td class="col-md-9"><em>Lebanese Cabbage Salad</em></h4></td>
+                            <td class="col-md-9"><em></em></td>
                             <td class="col-md-1" style="text-align: center"> 1 </td>
+                            <td class="col-md-1 text-center"></td>
+                            <td class="col-md-1 text-center"></td>
+                        </tr>
+                        <tr>
+                            <td class="col-md-9"><em></em></h4></td>
+                            <td classs="col-md-1" style="text-align: center"> 1 </td>
                             <td class="col-md-1 text-center">$8</td>
                             <td class="col-md-1 text-center">$8</td>
                         </tr>
                         <tr>
-                            <td class="col-md-9"><em>Baked Tart with Thyme and Garlic</em></h4></td>
+                            <td class="col-md-9"><em></em></h4></td>
                             <td class="col-md-1" style="text-align: center"> 3 </td>
                             <td class="col-md-1 text-center">$16</td>
                             <td class="col-md-1 text-center">$48</td>
                         </tr>
                         <tr>
-                            <td>   </td>
-                            <td>   </td>
+                            
                             <td class="text-right">
                             <p>
-                                <strong>Subtotal: </strong>
+                                <strong>Subtotal: </strong>
                             </p>
                             <p>
-                                <strong>Tax: </strong>
+                                <strong>Tax: </strong>
                             </p></td>
                             <td class="text-center">
                             <p>
@@ -109,15 +106,14 @@
                             </p></td>
                         </tr>
                         <tr>
-                            <td>   </td>
-                            <td>   </td>
-                            <td class="text-right"><h4><strong>Total: </strong></h4></td>
-                            <td class="text-center text-danger"><h4><strong>$31.53</strong></h4></td>
+                            
+                            <td class="text-right"><h4><strong>Total: </strong></h4></td>
+                            <td class="text-center text-danger"><h4><strong>RM<?php echo $_GET["price"] ;?></strong></h4></td>
                         </tr>
                     </tbody>
                 </table>
-                <button type="button" name="confirm" class="btn btn-success btn-lg btn-block"> <a href="?option=confirm"></a>
-                    Pay Now   <span class="glyphicon glyphicon-chevron-right"></span>
+                <button type="button" name="confirm" class="btn btn-success btn-lg btn-block">Confirm<a href="?option=confirm"></a>
+                        
                 </button></td>
             </div>
         </div>
@@ -137,3 +133,8 @@
 
 </body>
 
+
+<?php
+
+
+?>

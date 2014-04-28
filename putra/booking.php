@@ -89,15 +89,26 @@
 
 					<form  method="post" action="checking_booking.php">
 
-					Types Of Room : <input list="room_type" name="room_type">
-					<datalist id="room_type">
+					Types Of Room : <select name="room_type" id="room_type">
+									  <option value=""></option>
+									  <option value="1">Standard Twin Room</option>
+									  <option value="2">Standard Double Room</option>
+									  <option value="3">Deluxe Twin Room</option>
+									  <option value="4">Deluxe Double Room</option>
+									  <option value="5">Executive Suite</option>
+									</select>
 
-						<option value="Standard Twin Room">
-						<option value="Standard Double Room">
-							<option value="Deluxe Twin Room">
-							<option value="Deluxe Double Room">
-							<option value="Executive Suite">
-					</datalist>
+						<input type="hidden" id="user_id" name="user_id" value="<?php echo $_GET["user"] ;?>">
+						
+					<!-- <input  >
+					<datalist >
+
+						<option value="1">Standard Twin Room
+						<option value="2">Standard Double Room
+							<option value="3">Deluxe Twin Room
+							<option value="4">Deluxe Double Room
+							<option value="5">Executive Suite
+					</datalist> -->
 				
 				
 
@@ -112,7 +123,7 @@
 		 
 				
 						<center>
-						<input type="submit" name="send" value="send" class="btn btn-info"> <a href="?option=booking"></a>
+						<input type="submit" name="send" value="send" class="btn btn-info"> 
 						</center>
 				
 					</form>	

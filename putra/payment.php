@@ -1,5 +1,4 @@
 
- 
     <title>Payment</title>
     <center style="background-color:#000000;">
     <link href="/hiba/bootstrap/css/bootstrap.css" rel="stylesheet">
@@ -17,9 +16,6 @@
 
 
 <div>
-								
-
-
 
 			<tr>
 				<td style="background-color:#D6CC94; height:50px;">
@@ -31,16 +27,7 @@
 										
 						<embed width="300" height="200" src="http://media.expedia.com/hotels/8000000/7420000/7414500/7414420/7414420_69_b.jpg"><br>
 						<embed width="300" height="200" src="http://1.bp.blogspot.com/-uwDxpXa1JSY/Tw-awaWe4oI/AAAAAAAAAHg/zNHupFjXLgM/s1600/IMG_0661.JPG"><br>
-
-
-
-
-						
-
-						
-
-
-							            	
+				            	
 				
 				</td>
 
@@ -50,46 +37,34 @@
 				
 					<center>
 
-					<form method="post" action="checking_pay.php" class="form-horizontal">
+					<form method="post" action="checking_pay.php">
 
+
+					<input type="hidden" id="booking_id" name="booking_id" value="<?php echo $_GET["book"] ;?>">
+					<input type = "hidden" id = "room" name = "room" value = "<?php echo $_GET["room"] ;?>">
+				
 					<fieldset>
 
 					<!-- Form Name -->
 					<h1>Payment</h1>
 
 					<!-- Text input-->
-					<div class="control-group">
-					  <label class="control-label" for="textinput">First Name</label>
-					  <div class="controls">
-					    <input id="textinput" name="first" type="text" placeholder="" class="input-large" required>
-					    
-					  </div>
-					</div>
-
-					<!-- Text input-->
-					<div class="control-group">
-					  <label class="control-label" for="textinput">Last Name</label>
-					  <div class="controls">
-					    <input id="textinput" name="last" type="text" placeholder="" class="input-large" required>
-					    
-					  </div>
-					</div>
-
+					
 					<!-- Text input-->
 					<div class="control-group">
 					  <label class="control-label" for="textinput">Card Number</label>
 					  <div class="controls">
-					    <input id="textinput" name="card" type="text" placeholder="" class="input-large" required="">
+					    <input id="textinput" name="card" type="text" placeholder="" required="">
 					    
 					  </div>
 					</div>
 
 					<!-- Select Basic -->
 					<div class="control-group">
-					  <label class="control-label" for="selectbasic">Card Expiry Date</label>
+					  <label class="control-label" for="month">Card Expiry Date</label>
 					  <div class="controls">
-					    <select id="selectbasic" name="month" class="input-medium" required>
-					      <option></option>
+					    <select id="month" name="month" required>
+					     
 					      <option>Jan (01)</option>
 					      <option>Feb (02)</option>
 					      <option>Mar (03)</option>
@@ -108,11 +83,10 @@
 
 					<!-- Select Basic -->
 					<div class="control-group">
-					  <label class="control-label" for="selectbasic">Year</label>
+					  <label class="control-label" for="year">Year</label>
 					  <div class="controls">
-					    <select id="selectbasic" name="year" class="input-medium" required>
-					      <option></option>
-					      <option>2013</option>
+					    <select id="year" name="year" required>
+					  
 					      <option>2014</option>
 					      <option>2015</option>
 					      <option>2016</option>
@@ -123,6 +97,7 @@
 					      <option>2021</option>
 					      <option>2022</option>
 					      <option>2023</option>
+					      <option>2024</option>
 					    </select>
 					  </div>
 					</div>
@@ -131,9 +106,18 @@
 					<div class="control-group">
 					  <label class="control-label" for="textinput">Card CVV Number</label>
 					  <div class="controls">
-					    <input id="textinput" name="cvv" type="text" placeholder="" class="input-small" required="">
+					    <input id="textinput" name="cvv" type="text" placeholder="" required="">
 					    
 					  </div>
+					</div>
+
+					<div class="cotrol-group">
+						<label>Price(RM)</label>
+						<div class="controls">
+						<center>
+						<input type="text" id="price" name="price" readonly style="text-align: center" value="<?php echo $_GET["price"] ;?>" >
+						</center>
+						</div>
 					</div>
 
 					<!-- Button -->
@@ -148,23 +132,10 @@
 					</fieldset>
 					</form>
 					</center>
-					
-
-
+		
 				</div>
 				</td>
 				
-
-
-											
-										
-
-									
-											     
-											    
-											   
-									
-									</td>
 
 			</tr>
 

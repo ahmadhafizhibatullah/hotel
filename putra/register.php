@@ -77,7 +77,7 @@
             
                         <tr>
                         
-                        <td><input type="submit" name="register" value="register" class="btn btn-info"><a href="?option=register"></a> </td>
+                        <td><input type="submit" name="register" value="Register" class="btn btn-info"><a href="?option=register"></a> </td>
                         </tr> 
                       </tbody>
                     

@@ -42,6 +42,8 @@ body {
 
 <?php
 
+
+
     /*if (isset($_GET["option"])) {
         $option=$_GET["option"].".php";
     } else {
@@ -59,33 +61,23 @@ body {
         {
         include("putra/main_page.php");
         }
-         elseif($option=="pay")
-         {
+         elseif($option=="pay") 
+         { 
             include("putra/payment.php");
          }
          elseif($option=="confirm")
          {
         include("putra/confirm.php");
          }
-
               else 
         {
-            include("putra/booking.php");
 
-        }
-        
+            include("putra/booking.php");
+        }   
     }   
     else
     {
         include ("putra/main_page.php");
 
     }
-
-   
-
-
-
-
-
-
 ?>
