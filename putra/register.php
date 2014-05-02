@@ -16,13 +16,10 @@
           <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
         <![endif]-->
         
-        <style type="text/css">
-            .modal-footer {   border-top: 3px; }
-        </style>
     </head>
     
     <body>
-    <div class="container">
+    <div >
 
     <center>
     
@@ -31,7 +28,7 @@
         
       <!--register modal-->
      
-         
+         <table>
             
                <div>
                   
@@ -40,7 +37,7 @@
 
                <div>
 
-                  <form method="post" action="checking_register.php" class="form col-md-15 center-block"> 
+                  <form method="post" action="checking_register.php">
 
 
                       <tbody>
@@ -48,40 +45,49 @@
 
 
                               <td> Name: </td>
-                              <td><input type="text" name="name"><br><br></td>
+                              <td><input style = "margin-bottom: 10px;" type="text" name="name" required></td>
 
 
                         </tr>             
                      
                         <tr>                     
-                              <td> E-mail: </td>
-                              <td><input type="email" name="email"><br><br></td>
+                              <td>E-mail: </td>
+                              <td><input style = "margin-bottom: 10px;" type="email" name="email" required></td>
                         </tr>
                      
                         <tr>
                               <td>IC Number:  </td>
-                              <td><input type="text" name="ic_number"><br><br></td>
+                              <td><input style = "margin-bottom: 10px;" type="text" name="ic_number" required></td>
                         </tr>
                         
 
                         <tr>   
                               <td>Phone Number: </td>
-                              <td><input type="text" name="phone_number"><br><br></td>
+                              <td><input style = "margin-bottom: 10px;" type="text" name="phone_number" required></td>
+                        </tr>
+                           <tr>                     
+                              <td> Password: </td>
+                              <td><input style = "margin-bottom: 10px;" type="password" name="password" required></td>
+                        </tr>
+                         <tr>                     
+                              <td> Confirm Password:  </td>
+                              <td><input style = "margin-bottom: 10px;" type="password" name="con_password" required></td>
                         </tr>
 
                         <tr> 
                               <td>Gender: </td>
                               <td><input type="radio" name="gender" value="Female">Female
-                              <input type="radio" name="gender" value="Male">Male</td>
-                        </tr>   <br><br>  
-            
+                              <input type="radio" name="gender" value="Male">Male</td><br>
+                        </tr>   <br><br> <br><br> 
+                      
+                      
                         <tr>
-                        
-                        <td><input type="submit" name="register" value="Register" class="btn btn-info"><a href="?option=register"></a> </td>
+                        <td></td>
+                        <td><input style = "margin-top:15px;" type="submit" name="register" value="Register" class="btn btn-info"><a href="?option=register"></a> </td>
                         </tr> 
                       </tbody>
                     
-                        
+                    </div>
                      <?/*
                       E-mail: <input type="text" name="email">
                      <br><br>
@@ -115,8 +121,10 @@
                   </div>*/?>
                  
                 </form>
+                </div>
+        </table>
             </div><!-- //modal body -->
-            <div class="modal-footer">
+            <div>
         
             </div>
           
@@ -125,20 +133,12 @@
         
       <script type='text/javascript' src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
       <script type='text/javascript' src="/hiba/bootstrap/js/bootstrap.min.js"></script>
-      <script type='text/javascript'>
-        
-        $(document).ready(function() {
-        
-            
-        
-        });
-        
-      </script>
+      <script type='text/javascript'></script>
       </center>
      
     </body>
- <!--
-</html>-->
+ 
+</html>
 
 
 

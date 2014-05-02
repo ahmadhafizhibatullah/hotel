@@ -9,7 +9,9 @@ $year=$_POST["year"];
 $cvv=$_POST["cvv"];
 $booking_id=$_POST["booking_id"];
 $roomprice = $_POST["price"];
-
+$room_name = $_POST["room_id"];
+$timestamp_check_in = $_POST["check_in"];
+$timestamp_check_out = $_POST["check_out"];
 
 
 if ( $card!="" && $month!="" && $year!="" && $cvv!="")
@@ -18,7 +20,7 @@ if ( $card!="" && $month!="" && $year!="" && $cvv!="")
 	
 	mysqli_close($con);	
 
-	header ("Location: index.php?option=confirm&price=$roomprice");
+	header ("Location: index.php?option=confirm&price=$roomprice&room_id=$room_name&date_start=$timestamp_check_in&date_end=$timestamp_check_out");
 }
 
 else

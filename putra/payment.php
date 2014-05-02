@@ -39,10 +39,11 @@
 
 					<form method="post" action="checking_pay.php">
 
-
-					<input type="hidden" id="booking_id" name="booking_id" value="<?php echo $_GET["book"] ;?>">
+					<input type = "hidden" id = "room_id" name = "room_id" value = "<?php echo $_GET["room_id"] ;?>"> 
+					<input type="hidden" id = "booking_id" name="booking_id" value="<?php echo $_GET["book"] ;?>">
 					<input type = "hidden" id = "room" name = "room" value = "<?php echo $_GET["room"] ;?>">
-				
+					<input type = "hidden" id = "check_in" name = "check_in" value = "<?php echo date('d/m/Y', $_GET["date_start"]) ;?>">
+					<input type = "hidden" id = "check_out" name = "check_out" value = "<?php echo date('d/m/Y',$_GET["date_end"]);?>">
 					<fieldset>
 
 					<!-- Form Name -->

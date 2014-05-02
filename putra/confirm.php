@@ -64,34 +64,22 @@ while ($row =mysqli_fetch_array($result)){
                     <thead>
                         <tr>
                             <th>Types Of Room</th>
-                            <th>Guest</th>
-                            <th class="text-center">In</th>
-                            <th class="text-center">Out</th>
+                            <th class = "text-center">Check-in</th>
+                            
+                            <th class="text-center">Check-out</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td class="col-md-9"><em></em></td>
-                            <td class="col-md-1" style="text-align: center"> 1 </td>
-                            <td class="col-md-1 text-center"></td>
-                            <td class="col-md-1 text-center"></td>
+                            <td class="col-md-9"><em><?php echo $_GET["room_id"] ;?> </em></td>
+                            <td class="col-md-1" style="text-align: center"><?php echo $_GET["date_start"] ;?></td>
+                            <td class="col-md-1" style="text-align: center"><?php echo $_GET["date_end"] ;?></td>
+                        
                         </tr>
                         <tr>
                             <td class="col-md-9"><em></em></h4></td>
-                            <td classs="col-md-1" style="text-align: center"> 1 </td>
-                            <td class="col-md-1 text-center"></td>
-                            <td class="col-md-1 text-center"></td>
-                        </tr>
-                        <tr>
-                            <td class="col-md-9"><em></em></h4></td>
-                            <td class="col-md-1" style="text-align: center"> 3 </td>
-                            <td class="col-md-1 text-center"></td>
-                            <td class="col-md-1 text-center"></td>
-                        </tr>
-                        <tr>
-                            
-                         
-                            
+                            <td classs="col-md-1" style="text-align: center"></td>
+                          
                         </tr>
                         <tr>
                             
@@ -100,7 +88,7 @@ while ($row =mysqli_fetch_array($result)){
                         </tr>
                     </tbody>
                 </table>
-                <button type="button" name="confirm" class="btn btn-success btn-lg btn-block">Confirm<a href="?option=confirm"></a>
+                <a href="http://localhost/hotel/index.php?option=congratulation" class="btn btn-success btn-lg btn-block">Confirm</a>
                         
                 </button></td>
             </div>
